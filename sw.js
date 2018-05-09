@@ -42,6 +42,6 @@ self.addEventListener('notificationclick', function(event) {
 	  event.notification.close();
 
 	  event.waitUntil(
-	    clients.openWindow('http://localhost:8080/myapp/app/approve')
+	    clients.openWindow('http://webapp-180507044224.azurewebsites.net/app/approve')
 	  );
 });
