@@ -42,6 +42,7 @@ self.addEventListener('notificationclick', function(event) {
 	  event.notification.close();
 
 	  event.waitUntil(
-	    clients.openWindow('https://innovatein48ii.azurewebsites.net/app/approve')
+	    //clients.openWindow('https://innovatein48ii.azurewebsites.net/app/approve')
+		clients.openWindow('http://192.168.43.235:8080/Innovate48App/app/approve')
 	  );
 });
